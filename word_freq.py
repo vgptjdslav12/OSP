@@ -24,3 +24,5 @@ for line in lines :
 
 di = sorted(di.items(),key=operator.itemgetter(1), reverse=True);
 if param2 > len(di) : param2 = len(di);
+for i in range(param2):
+    print("{:<15s} {:>15s}".format(di[i][0], str(di[i][1])));
