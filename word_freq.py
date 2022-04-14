@@ -23,3 +23,4 @@ for line in lines :
         di[line] += 1;
 
 di = sorted(di.items(),key=operator.itemgetter(1), reverse=True);
+if param2 > len(di) : param2 = len(di);
