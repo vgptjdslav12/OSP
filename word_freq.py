@@ -17,3 +17,7 @@ for line in lines :
     line = ''.join(filter(str.isalnum, line.lower()));
     # 공백 제거
     line.replace(" ", "");
+    if di.get(line) == None :
+        di[line] = 1;
+    else :
+        di[line] += 1;
