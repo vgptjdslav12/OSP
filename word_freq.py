@@ -21,3 +21,5 @@ for line in lines :
         di[line] = 1;
     else :
         di[line] += 1;
+
+di = sorted(di.items(),key=operator.itemgetter(1), reverse=True);
