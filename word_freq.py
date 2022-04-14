@@ -15,3 +15,5 @@ f.close();
 for line in lines :
     # 특수문자 제거
     line = ''.join(filter(str.isalnum, line.lower()));
+    # 공백 제거
+    line.replace(" ", "");
